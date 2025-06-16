@@ -1,23 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipe Finder App</title>
-    <script src="./js/main.js"></script>
     <link rel="stylesheet" href="./css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
       <header>
         <h1>Recipe Finder</h1>
-        <p>Meals you can trust</p>
       </header>
 
-     <div class="search-container">
-        <input type="text" id="search-input" placeholder="Search for meals or keywords" />
+      <div class="search-container">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search for meals or keywords"
+        />
         <button id="search-btn">Search</button>
+      </div>
+
+      <div id="error-container" class="hidden">
+        <p>No meals found. Try another search term!</p>
       </div>
 
       <div id="result-heading"></div>
@@ -25,11 +34,14 @@
       <div id="meals" class="meals-container"></div>
 
       <div id="meal-details" class="hidden">
-        <button id="back-btn">Back to recipes</button>
+        <button id="back-btn">
+          <i class="fas fa-arrow-left"></i> Back to recipes
+        </button>
 
         <div class="meal-details-content"></div>
       </div>
     </div>
 
+    <script src="./js/main.js"></script>
   </body>
 </html>
