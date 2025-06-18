@@ -45,7 +45,7 @@ async function searchMeals() {
       // no meals found
       resultHeading.textContent = ``;
       mealsContainer.innerHTML = "";
-      errorContainer.textContent = `No recipes found for "${searchTerm}". Try another search term!`;
+      errorContainer.textContent = `No recipes found for "${searchTerm}". Try again!`;
       errorContainer.classList.remove("hidden");
     } else {
       resultHeading.textContent = `Search results for "${searchTerm}":`;
